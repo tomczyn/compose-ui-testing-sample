@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    SignInScreen()
                 }
             }
         }
@@ -29,14 +29,13 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun SignInScreen() {
+
+
 }
 
-@Preview(showBackground = true)
+@Preview
 @Composable
-fun DefaultPreview() {
-    MyTheme {
-        Greeting("Android")
-    }
+fun PreviewSignInScreen() {
+    SignInScreen()
 }
